@@ -1,0 +1,12 @@
+makefile = like query, you can run the query using code that stored in makefile using terminal
+
+sqlc = package to generate sql with just a query, it generates all of go code that we need to connect
+with database (postgre/mysql). Fast and simple
+
+LIMIT (POSTGRESQL) = to return data with sum based on limit number
+OFFSET (POSTGRESQL) = to skip number that initialized
+
+SELECT FOR UPDATE (POSTGRESQL) = for locking the query, other query will wait and not perform until
+the select query before this finished (doing commit)
+
+HOW TO AVOID DEADLOCK = avoid unconsistent order between concurrent, need a consistent order
