@@ -32,12 +32,16 @@ func RandomOwner() string {
 	return RandomString(12)
 }
 
+func RandomEmail() string {
+	return RandomString(6) + "@" + RandomString(6) + ".com"
+}
+
 func RandomBalance() int {
 	return RandomInt(0, 100000)
 }
 
 func RandomCurrency() string {
-	currency := []string{"USD","IDR","KRW","EUR","GBP"}
+	currency := []string{"USD","IDR","EUR"}
 
 	r := rand.Intn(len(currency))
 	return currency[r]
