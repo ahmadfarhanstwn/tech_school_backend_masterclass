@@ -51,6 +51,7 @@ func(server *Server) setupRouter() {
 	authRoutes.POST("/accounts", server.createAccount)
 
 	server.router = router
+	//check
 }
 
 func(s *Server) Start(address string) error {
